@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chareset='utf-8'>
+<title>flex</title>
+<style>
+    .container {
+        display: flex;
+        width: 100%;
+        height:6rem;
+        background: lightgreen;
+        margin-bottom: 1rem;
+    }
+
+    .item {
+        width: 3rem;
+        background: dodgerblue;
+        border: .1rem solid lightgray;
+        text-align: center;
+    }
+
+    .two {
+        font-size: 2rem;
+    }
+
+    .three {
+        font-size: 3rem;
+    }
+
+    .extend {
+        flex: 1 1 auto;
+    }
+</style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='flex-direction: column'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='width: 5rem'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='width: 5rem; flex-wrap: wrap'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='justify-content: center'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='justify-content: end'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container' style='justify-content: space-around'>
+        <div class='item'>1</div>
+        <div class='item two'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container'>
+        <div class='item'>1</div>
+        <div class='item two extend'>2</div>
+        <div class='item three'>3</div>
+    </div>
+    
+    <div class='container'>
+        <div class='item extend'>1</div>
+        <div class='item two extend'>2</div>
+        <div class='item three extend'>3</div>
+    </div>
+</body>
+</html>

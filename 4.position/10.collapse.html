@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chareset='utf-8'>
+<title>border-collapse</title>
+<style>
+    table {
+        border: .1rem solid;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    td {
+        border: .1rem solid;
+    }
+
+    table.collapse {
+        border-collapse: collapse;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <caption>연봉</caption>
+        <tr><td>최한석</td><td>1억</td></tr>
+        <tr><td>한아름</td><td>2억</td></tr>
+    </table>
+    <table class='collapse'>
+        <caption>연봉</caption>
+        <tr><td>최한석</td><td>1억</td></tr>
+        <tr><td>한아름</td><td>2억</td></tr>
+    </table>
+</body>
+</html>
